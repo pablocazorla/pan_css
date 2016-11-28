@@ -1,0 +1,113 @@
+/* TEXT */
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: @a-color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+abbr, acronym {
+  text-decoration: none;
+}
+ins, u {
+  text-decoration: underline;
+}
+mark {
+  display: inline-block;
+  background-color: @yellow-color;
+  padding: 0 0.5em;
+}
+sub, .sub {
+  vertical-align: sub;
+}
+sup, .sup {
+  vertical-align: super;
+}
+code, kbd, pre {
+  font-family: @font-mono-family;
+  display: inline-block;
+  border: 1px solid @border-color;
+  padding: 0 0.5em;
+  background-color: @light-grey-color;
+}
+del, s, strike, .strike {
+  text-decoration: line-through;
+}
+abbr, acronym, address, blockquote, .blockquote, cite, em, .em, i, .i, q, time, var {
+  font-style: italic;
+}
+b, strong, .strong, dfn, em, .em {
+  font-weight: bold;
+}
+address, blockquote, .blockquote, pre {
+  display: block;
+}
+blockquote, .blockquote {
+  border-left: 3px solid @primary-color;
+  padding: 1.1em 2em;
+  margin: 0 2em @margin-bottom;
+}
+pre {
+  padding: @rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  border: 1px solid @border-color;
+  margin-bottom: @margin-bottom;
+  background-color: @light-grey-color;
+}
+
+/* TEXT SIZES */
+
+small, .small {
+  font-size: 65%;
+}
+big, .big {
+  font-size: 175%;
+}
+.biggest {
+  font-size: 250%;
+}
+
+/* HEADERS & TITLES */
+
+.h1 {
+  font-size: 4 * @rem;
+}
+.h2 {
+  font-size: 3 * @rem;
+}
+.h3 {
+  font-size: 2.4 * @rem;
+}
+.h4 {
+  font-size: 1.8 * @rem;
+}
+.h5 {
+  font-size: 1.4 * @rem;
+}
+.h6 {
+  font-size: 1.2 * @rem;
+}
+.h1, .h2, .h3 {
+  font-weight: 300
+}
+.h5, .h6 {
+  font-weight: 700
+}
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  display: block;
+  line-height: @head-line-height;
+  margin-bottom: @margin-bottom;
+  padding-top: @margin-bottom;
+}
+.p {
+  display: block;
+  margin-bottom: @margin-bottom;
+}

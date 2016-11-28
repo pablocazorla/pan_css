@@ -1,0 +1,251 @@
+<h1 class="title-1 doc-title">Layout helpers<h1>
+<p class="p">
+  En la mayoría de las ocaciones nos encontramos con el problema de que no siempre coincide el tipo de tag que queremos agregar con el estilo o modo en que se renderiza.
+</p>
+<h2 class="title-2 doc-title">Float and Clear<h2>
+<p class="p">
+  Use these classes to set <i>float</i> and <i>clear</i> CSS properties to any tag.
+</p>
+<table>
+	<thead>
+		<tr>
+			<th>CSS Property</th>
+			<th>Use the class</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	float: none;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.float-none</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	float: left;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.float-left</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	float: right;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.float-right</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	clear: none;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.clear</em> or <em>.clear-none</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	clear: left;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.clear</em> or <em>.clear-left</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	clear: right;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.clear</em> or <em>.clear-right</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+.clearfix {
+	zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+</pre>
+			</td>
+			<td class="color-primary"><em>.clearfix</em> (to avoid float collapses).</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<h2 class="title-2 doc-title">Position<h2>
+<p class="p">
+  Use these classes to set <i>position</i> CSS property to any tag.
+</p>
+<table>
+	<thead>
+		<tr>
+			<th>CSS Property</th>
+			<th>Use the class</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	position: static;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.position-static</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	position: relative;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.position-relative</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	position: absolute;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.position-absolute</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	position: fixed;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.position-fixed</em></td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+<h2 class="title-2 doc-title">Overflow<h2>
+<p class="p">
+  Use these classes to set <i>overflow</i> CSS property to any tag.
+</p>
+<table>
+	<thead>
+		<tr>
+			<th>CSS Property</th>
+			<th>Use the class</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	overflow: visible;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.overflow-visible</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	overflow: hidden;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.overflow-hidden</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	overflow: scroll;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.overflow-scroll</em></td>
+		</tr>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+	overflow: auto;
+}	
+</pre>
+			</td>
+			<td class="color-primary"><em>.overflow-auto</em></td>
+		</tr>		
+	</tbody>
+</table>
+<p class="p doc-note">
+	<b>For <i>overflow-x</i> and <i>overflow-y</i>:</b><br><br>
+	To set these properties, just use the <i>-x</i> or <i>-y</i> terms. Eg: <em>.overflow-x-hidden</em>, <em>.overflow-y-scroll</em>, etc.
+</p>
+
+<hr>
+<h2 class="title-2 doc-title">Box sizing<h2>
+<p class="p">
+  Use these classes to set <i>box-sizing</i> CSS property to any tag.
+</p>
+<table>
+	<thead>
+		<tr>
+			<th>CSS Property</th>
+			<th>Use the class</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+</pre>
+			</td>
+			<td class="color-primary"><em>.box-sizing-content</em> or <em>.box-sizing-content-box</em></td>
+		</tr>	
+		<tr>
+			<td style="width:300px;">
+<pre class="css mb-0">
+element{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+</pre>
+			</td>
+			<td class="color-primary"><em>.box-sizing-border</em> or <em>.box-sizing-border-box</em></td>
+		</tr>			
+	</tbody>
+</table>

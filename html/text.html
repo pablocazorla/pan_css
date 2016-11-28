@@ -1,0 +1,272 @@
+<h1 class="title-1 doc-title">Text<h1>
+<h2 class="title-2 doc-title">Separating markup of style<h2>
+<p class="p">
+  En la mayoría de las ocaciones nos encontramos con el problema de que no siempre coincide el tipo de tag que queremos agregar con el estilo o modo en que se renderiza.
+</p>
+<p class="p">
+  Ocurre que a veces no queremos que un tag <i>h2</i> se vea como tal, sino más pequeño o más grande, por ejemplo.
+</p>
+<p class="p">
+  Es por esto que Pin ofrece distintos modos de mostrar cualquier bloque de texto como un header, o un párrafo, etc.
+</p>
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - Different ways to render a <em>h2</em> header</p>
+  <div class="doc-box">  
+<h2 class="h3">h2 tag with <i>.h3</i> class</h2>
+<h2>h2 tag without any <i>.h2</i> or <i>.title-2</i> class</h2>
+<h2 class="h2">h2 tag with <i>.h2</i> class</h2>
+<p class="h2">p tag with <i>.h2</i> class</p>
+  </div>
+</div>
+<p class="p">
+  Para dar el estilo correspondiente en cada caso, use las siguientes clases:
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Style</th>
+      <th>Class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Header 1</td>
+      <td>Use <em>.h1</em> or <em>.title-1</em> class.</td>
+    </tr>
+    <tr>
+      <td>Header 2</td>
+      <td>Use <em>.h2</em> or <em>.title-2</em> class.</td>
+    </tr>
+    <tr>
+      <td>Header 3</td>
+      <td>Use <em>.h3</em> or <em>.title-3</em> class.</td>
+    </tr>
+    <tr>
+      <td>Header 4</td>
+      <td>Use <em>.h4</em> or <em>.title-4</em> class.</td>
+    </tr>
+    <tr>
+      <td>Header 5</td>
+      <td>Use <em>.h5</em> or <em>.title-5</em> class.</td>
+    </tr>
+    <tr>
+      <td>Header 6</td>
+      <td>Use <em>.h6</em> or <em>.title-6</em> class.</td>
+    </tr>
+    <tr>
+      <td>Paragraph (p)</td>
+      <td>Use <em>.p</em> class.</td>
+    </tr>
+  </tbody>
+</table>
+<hr/>
+<h2 class="title-2 doc-title">The <em>'.textblock'</em> class<h2>
+<p class="p">
+  En algunos casos es puede ser necesario no tener que agregar en cada caso la clase correspondiente para dar estilos a los headers o párrafos.
+</p>
+<p class="p doc-note">
+  La <em>'.textblock'</em> class es especialmente útil para el caso de contenido de blogs, por ejemplo.
+</p>
+<p class="p">
+  Para ese caso, basta wrap todo nuestro markup en un tag contenedor con la clase <em>'.textblock'</em>. En ese caso, cada tag se renderizará con los estilos correspondientes.
+</p>
+
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - Text rendered inside the <em>'.textblock'</em> class.</p>
+  <div class="doc-box">  
+<div class="textblock">
+  <h2>Lorem ipsum</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in arcu lobortis, ornare ex faucibus, interdum libero. Nulla facilisi. Nunc semper, tellus non lacinia mollis.</p>
+  <p>Duis non dapibus risus. Praesent quam purus, fringilla et ex nec, facilisis iaculis ex. Maecenas et sem eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+  <h3>Aliquam erat volutpat</h3>
+  <p>Fusce mi erat, dapibus eu imperdiet quis, gravida a est. Curabitur elementum, urna non pulvinar efficitur, dui augue hendrerit magna, at tempor risus est et tellus. Curabitur id enim risus.</p>
+  <p>Donec dictum libero vitae libero egestas, ut maximus erat sagittis. Ut eget nibh at nisi sagittis bibendum. Nullam libero tellus, rutrum vel sodales quis, sagittis in dolor.</p>
+</div>
+  </div>
+</div>
+<hr/>
+<h2 class="title-2 doc-title">Headers<h2>
+<p class="p">
+  Los <i>header</i> se crean al añadir al markup HTML las clases <em>.h1</em> to <em>.h6</em> or <em>.title-1</em> to <em>.title-6</em>.
+</p>
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - Headers with tag <code>&lt;h#&gt;</code> and class <em>.title-#</em>.</p>
+  <div class="doc-box">  
+<h1 class="title-1">Header 1</h1>
+<h2 class="title-2">Header 2</h2>
+<h3 class="title-3">Header 3</h3>
+<h4 class="title-4">Header 4</h4>
+<h5 class="title-5">Header 5</h5>
+<h6 class="title-6">Header 6</h6>
+  </div>
+</div>
+<hr/>
+<h2 class="title-2 doc-title">Paragraph<h2>
+<p class="p">
+  Los <i>paragraphs</i> <code>&lt;p&gt;</code> adquieren su estilo mediante la clase <em>.p</em>.
+</p>
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - Different <i>paragraphs</i>.</p>
+  <div class="doc-box">
+<p class="p">
+  This is a tag <i>paragraph</i> with class <em>.p</em>.
+</p>
+<span class="p">
+  This is a tag <i>span</i> with class <em>.p</em>.
+</span>
+<div class="textblock">
+  <p>
+    This is a tag <i>paragraph</i> inside a <em>.textblock</em>.
+  </p>
+</div>
+  </div>
+</div>
+<hr/>
+<h2 class="title-2 doc-title">Semantic text formats<h2>
+<p class="p">
+  The following list gives you a short overview of the most commonly used text-level semantics and how to utilize them.
+</p>
+<p class="p">
+  Todos estos tags pueden ser simulados a nivel de estilo mediante el mismo nombre de calse que el tag.<br>
+  Por ejemplo: el tag <i>strong</i> y la clase <em>.strong</em> aplicada a un tag <i>span</i> se verán igual.
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>&lt;a&gt;</code></td>
+      <td>This is a <a href="#">a by tag</a> and this is a <span class="a">a by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;abbr&gt;</code></td>
+      <td>This is a <abbr title="abbreviation">abbr by tag</abbr> and this is a <span class="abbr" title="abbreviation">abbr by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;address&gt;</code></td>
+      <td><address>This is an address by tag</address> and <span class="address">this is an address by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;b&gt;</code></td>
+      <td>This is a <b>b by tag</b> and this is a <span class="b">b by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;blockquote&gt;</code></td>
+      <td><blockquote>This is a blockquote by tag</blockquote> and <span class="blockquote">this is a blockquote by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;cite&gt;</code></td>
+      <td>This is a <cite>cite by tag</cite> and this is a <span class="cite">cite by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;code&gt;</code></td>
+      <td>This is a <code>code by tag</code> and this is a <span class="code">code by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;del&gt;</code></td>
+      <td>This is a <del>del by tag</del> and this is a <span class="del">del by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;dfn&gt;</code></td>
+      <td>This is a <dfn>dfn by tag</dfn> and this is a <span class="dfn">dfn by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;em&gt;</code></td>
+      <td>This is a <em>em by tag</em> and this is a <span class="em">em by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;i&gt;</code></td>
+      <td>This is a <i>i by tag</i> and this is a <span class="i">i by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;ins&gt;</code></td>
+      <td>This is a <ins>ins by tag</ins> and this is a <span class="ins">ins by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;kbd&gt;</code></td>
+      <td>This is a <kbd>kbd by tag</kbd> and this is a <span class="kbd">kbd by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;mark&gt;</code></td>
+      <td>This is a <mark>mark by tag</mark> and this is a <span class="mark">mark by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;pre&gt;</code></td>
+      <td>
+<pre class="html">
+&lt;div class="row"&gt;
+  &lt;div class="col"&gt;...&lt;/div&gt;
+  &lt;div class="col"&gt;...&lt;/div&gt;
+  &lt;div class="col"&gt;...&lt;/div&gt;
+  &lt;div class="col"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre></td>
+    </tr>
+    <tr>
+      <td><code>&lt;q&gt;</code></td>
+      <td>This is a <q>q by tag</q> and this is a <span class="q">q by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;s&gt;</code></td>
+      <td>This is a <s>s by tag</s> and this is a <span class="s">s by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;strike&gt;</code></td>
+      <td>This is a <strike>strike by tag</strike> and this is a <span class="strike">strike by class</span><br/>
+        (Use <i>s</i> tag instead.)</td>
+    </tr>
+    <tr>
+      <td><code>&lt;strong&gt;</code></td>
+      <td>This is a <strong>strong by tag</strong> and this is a <span class="strong">strong by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;sub&gt;</code></td>
+      <td>This is a <sub>sub by tag</sub> and this is a <span class="sub">sub by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;sup&gt;</code></td>
+      <td>This is a <sup>sup by tag</sup> and this is a <span class="sup">sup by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;time&gt;</code></td>
+      <td>This is a <time>time by tag</time> and this is a <span class="time">time by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;u&gt;</code></td>
+      <td>This is a <u>u by tag</u> and this is a <span class="u">u by class</span></td>
+    </tr>
+    <tr>
+      <td><code>&lt;var&gt;</code></td>
+      <td>This is a <var>var by tag</var> and this is a <span class="var">var by class</span></td>
+    </tr>
+  </tbody>
+</table>
+<hr/>
+<h2 class="title-2 doc-title">Text sizes<h2>
+<p class="p">
+  Some class pueden ayudarte a cambiar el tamaño de los textos.
+</p>
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - The classes used to change the size of a text.</p>
+  <div class="doc-box">  
+<div class="textblock">
+  <p class="small">
+    This is a small paragraph that uses the <em>.small</em> class.
+  </p>
+  <p>
+    This is a normal size paragraph that does not uses size classes.
+  </p>
+  <p class="big">
+    This is a big paragraph that uses the <em>.big</em> class.
+  </p>
+  <p class="biggest">
+    This is a biggest paragraph that uses the <em>.biggest</em> class.
+  </p>
+</div>
+  </div>
+</div>
+

@@ -1,0 +1,180 @@
+<h1 class="title-1 doc-title">Dropdown<h1>
+<p class="p">
+  Use dropdown to create custom menu, or selector, etc.
+</p>
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - Simple <i>dropdown</i>.</p>
+  <div class="doc-box">  
+<div class="dropdown">
+	<button class="dropdown-trigger btn btn-primary">Options</button>
+	<div class="dropdown-content">
+		<div style="padding:20px;width:300px;">
+			Some content...
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+<p class="p">
+  All elements to show have to be included inside the <em>.dropdown-content</em> tag.
+</p>
+<p class="p doc-note">
+  You can fill the <em>.dropdown-content</em> tag with whatever you want.
+</p>
+<hr/>
+<h2 class="title-2 doc-title">Dropdown by click or roll over<h2>
+<p class="p">
+  By default the dropdown is open by click in the button. But you can open the dropdown by roll over the button adding the class <em>.hover</em>.
+</p>
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - Dropdown by <i>click</i> and dropdown by <i>roll over</i>.</p>
+  <div class="doc-box">  
+<div class="dropdown">
+	<button class="dropdown-trigger btn btn-primary">Click me</button>
+	<div class="dropdown-content">
+		<div style="padding:20px;width:300px;">
+			You are <b>clicked</b> the button.
+		</div>
+	</div>
+</div>
+<div class="dropdown hover">
+	<button class="dropdown-trigger btn btn-primary">Roll over me</button>
+	<div class="dropdown-content">
+		<div style="padding:20px;width:300px;">
+			You are <b>roll over</b> the button.
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+
+<p class="p doc-note">
+	<u>Important</u>:<br/><br/>
+	- Is not necessary to set a <em>.btn</em> class for the <em>.dropdown-trigger</em>, but is important for the <i>click</i> dropdown to set an <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> tag.<br/><br/>
+	- If you use a <code>&lt;a&gt;</code> as dropdown trigger, it's important to set the attribute <code>href="javascript:void(0);"</code> to avoid link navigation.
+</p>
+<p class="p">
+  The <em>.hover</em> dropdown is useful for <i>menus</i>.
+</p>
+<h4 class="title-4 doc-title">Dropdown as <i>menu</i> (example)<h4>
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - Dropdown as <i>menu</i>.</p>
+  <div class="doc-box">  
+<div class="dropdown hover">
+	<button class="dropdown-trigger btn btn-dark">Menu</button>
+	<div class="dropdown-content">
+		<div class="btn-group vertical">
+			<a href="javascript:void(0);" class="btn btn-link">Home</a>
+			<a href="javascript:void(0);" class="btn btn-link">Services</a>
+			<a href="javascript:void(0);" class="btn btn-link">Products</a>
+			<a href="javascript:void(0);" class="btn btn-link">Gallery</a>
+			<hr>
+			<a href="javascript:void(0);" class="btn btn-link">Contact</a>
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+<h4 class="title-4 doc-title">Dropdown inside a button group (example)<h4>
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - Various types of buttons.</p>
+  <div class="doc-box">  
+<div class="btn-group">
+	<a href="javascript:void(0);" class="btn btn-secondary">Home</a>
+	<a href="javascript:void(0);" class="btn btn-secondary">Get Started</a>
+	<a href="javascript:void(0);" class="btn btn-secondary">API</a>
+	<div class="dropdown hover center">
+		<a href="javascript:void(0);" class="dropdown-trigger btn btn-secondary">Documentation</a>
+		<div class="dropdown-content">
+			<div class="btn-group vertical flat-buttons">
+				<a href="javascript:void(0);" class="btn btn-grey">Tutorials</a>
+				<a href="javascript:void(0);" class="btn btn-grey">API Docs</a>
+				<a href="javascript:void(0);" class="btn btn-grey">Forum</a>
+				<a href="javascript:void(0);" class="btn btn-grey">News</a>
+				<hr>
+				<a href="javascript:void(0);" class="btn btn-grey">How to</a>
+			</div>
+		</div>
+	</div>
+	<a href="javascript:void(0);" class="btn btn-secondary">Contact</a>
+</div>
+	</div>
+</div>
+<hr/>
+<h2 class="title-2 doc-title">Dropdown open by default<h2>
+<p class="p">
+  Use the class <em>.open</em> to show opened by default the dropdown.
+</p>
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - Dropdown <i>opened</i>.</p>
+  <div class="doc-box">  
+<div class="dropdown open">
+	<button class="dropdown-trigger btn btn-primary">Options</button>
+	<div class="dropdown-content">
+		<div style="padding:20px;width:300px;">
+			Content open by default...
+		</div>
+	</div>
+</div>
+<br/><br/><br/><br/><br/><br/>
+  </div>
+</div>
+<hr/>
+<h2 class="title-2 doc-title">Dropdown position<h2>
+<p class="p">
+  By default the dropdown content is shown from bottom left. But you can change this using the <em>.top</em>, <em>.center</em> and <em>.right</em> classes.
+</p>
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - Different dropdown positions.</p>
+  <div class="doc-box">  
+<div class="dropdown">
+	<button class="dropdown-trigger btn btn-primary">Bottom left</button>
+	<div class="dropdown-content">
+		<div style="padding:20px;width:300px;">
+			This is the default position.
+		</div>
+	</div>
+</div>
+<div class="dropdown center">
+	<button class="dropdown-trigger btn btn-primary">Bottom center</button>
+	<div class="dropdown-content">
+		<div style="padding:20px;width:300px;">
+			This is the bottom center position.
+		</div>
+	</div>
+</div>
+<div class="dropdown right">
+	<button class="dropdown-trigger btn btn-primary">Bottom right</button>
+	<div class="dropdown-content">
+		<div style="padding:20px;width:300px;">
+			This is the bottom right position.
+		</div>
+	</div>
+</div>
+<br><br>
+<div class="dropdown top">
+	<button class="dropdown-trigger btn btn-primary">Top left</button>
+	<div class="dropdown-content">
+		<div style="padding:20px;width:300px;">
+			This is the top left position.
+		</div>
+	</div>
+</div>
+<div class="dropdown top center">
+	<button class="dropdown-trigger btn btn-primary">Top center</button>
+	<div class="dropdown-content">
+		<div style="padding:20px;width:300px;">
+			This is the top center position.
+		</div>
+	</div>
+</div>
+<div class="dropdown top right">
+	<button class="dropdown-trigger btn btn-primary">Top right</button>
+	<div class="dropdown-content">
+		<div style="padding:20px;width:300px;">
+			This is the top right position.
+		</div>
+	</div>
+</div>
+  </div>
+</div>

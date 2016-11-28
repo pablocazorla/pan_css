@@ -1,0 +1,90 @@
+/* IMG CONTAINER */
+
+.img-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  background-color: @light-grey-color;
+  /* Default 4:3 */
+  .prop-construct;
+  img {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    .transform(translateY(-50%));
+    width: 101% !important;
+    height: auto !important;
+  }
+  &.full-height:not(.no-force) {
+    img {
+      top: 0;
+      left: 50%;
+      .transform(translateX(-50%) translateY(0px));
+      width: auto !important;
+      height: 101% !important;
+    }
+  }
+  &.no-force {
+    max-width: 100% !important;
+    img {
+      position: static;
+      top: auto;
+      left: auto;
+      display: block;
+      margin: 0 auto;
+      .transform(none);
+      width: auto !important;
+      height: auto !important;
+    }
+  }
+  &.prop-3-4 {
+    .prop-construct(3, 4);
+  }
+  &.prop-16-9 {
+    .prop-construct(16, 9);
+  }
+  &.prop-9-16 {
+    .prop-construct(9, 16);
+  }
+  &.prop-1-1 {
+    .prop-construct(1, 1);
+  }
+  &.prop-2-3 {
+    .prop-construct(2, 3);
+  }
+  &.prop-3-2 {
+    .prop-construct(3, 2);
+  }
+  &.prop-2-1 {
+    .prop-construct(2, 1);
+  }
+  &.prop-1-2 {
+    .prop-construct(2, 1);
+  }
+  &.prop-4-5 {
+    .prop-construct(4, 5);
+  }
+  &.prop-5-4 {
+    .prop-construct(5, 4);
+  }
+  &.prop-6-5 {
+    .prop-construct(6, 5);
+  }
+  &.prop-5-6 {
+    .prop-construct(5, 6);
+  }
+}
+img{
+  &.responsive{
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    &.limited{
+      max-width: 100% !important;
+      width: auto !important;
+    }
+  }
+}

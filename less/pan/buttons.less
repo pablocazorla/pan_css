@@ -1,0 +1,65 @@
+/* BUTTONS */
+@is-btn: true;
+.btn {
+  display: inline-block;
+  line-height: @btn-line-height;
+  height: @btn-line-height;
+  padding: 0 @btn-padding;
+  background-image: none;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: transparent;
+  border-style: solid;
+  border-width: @btn-border-width;
+  border-color: transparent;
+  .border-radius(@btn-border-radius);
+  .user-select-none;
+  .button-text;
+  &:hover {
+    text-decoration: none;
+  }
+  // Colors
+  &.btn-primary {
+    .btn-color-construct(@primary-color, @primary-alt-color, @primary-color);
+  }
+  &.btn-secondary {
+    .btn-color-construct(@secondary-color, @secondary-alt-color, @secondary-color);
+  }
+  &.btn-link {
+    .btn-color-construct(transparent, @a-color, transparent);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &.btn-grey {
+    .btn-color-construct(@grey-color, @grey-alt-color, @grey-color);
+  }
+  &.btn-light-grey {
+    .btn-color-construct(@light-grey-color, @light-grey-alt-color, @light-grey-color);
+  }
+  &.btn-dark {
+    .btn-color-construct(@dark-color, @dark-alt-color, @dark-color);
+  }
+  &.btn-danger {
+    .btn-color-construct(@danger-color, @danger-alt-color, @danger-color);
+  }
+  &.btn-warning {
+    .btn-color-construct(@warning-color, @warning-alt-color, @warning-color);
+  }
+  &.btn-success {
+    .btn-color-construct(@success-color, @success-alt-color, @success-color);
+  }
+  // Shape
+  &.circular {
+    width: @btn-line-height * 1.05;
+    .border-radius(52%);
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  &.no-border {
+    border: none;
+  }
+}

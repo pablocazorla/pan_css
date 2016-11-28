@@ -1,0 +1,199 @@
+<h1 class="title-1 doc-title">Form inputs<h1>
+<p class="p">
+  All classes in Pin are 'unstyled', es decir que se ven como una serie de líneas de texto.
+</p>
+<div class="doc-ex">
+  <p class="doc-ex-title"><b>Example</b> - Simple <i>table</i> tag.</p>
+  <div class="doc-box">  
+<form class="grid-2 grid-md-1">
+  <div class="row">
+    <div class="col">
+      <fieldset>
+        <legend>Personal data:</legend>
+        <div class="input-set">
+          <label>First name:</label>
+          <input type="text" value="" placeholder="Enter your first name here...">
+        </div>
+        <div class="input-set">
+          <label>Last name:</label>
+          <input type="text" value="" placeholder="Enter your last name here...">
+        </div>
+        <div class="input-set">
+          <label>Country:</label>
+          <select>
+            <optgroup label="America">
+              <option value="1">Argentina</option>
+              <option value="2">Brazil</option>
+              <option value="3">Chile</option>
+            </optgroup>
+            <optgroup label="Europe">
+              <option value="1">Spain</option>
+              <option value="2">France</option>
+              <option value="3">Germany</option>
+            </optgroup>
+          </select>
+        </div>    
+      </fieldset>
+    </div>
+    <div class="col">
+      <fieldset>
+        <legend>Web data:</legend>
+        <div class="input-set">
+         <label>Email:</label>
+    <input type="email" value="" placeholder="Enter your email here...">
+        </div>
+        <div class="input-set">
+         <label>Website:</label>
+    <input type="url" value="" placeholder="Enter URL here...">
+        </div>       
+      </fieldset>
+    </div>
+  </div>
+  <fieldset>
+    <div class="input-set">
+      <label>Comment:</label>
+      <textarea placeholder="Enter your comment here..."></textarea>
+    </div>
+    <div class="input-set align-center">
+      <input type="submit" value="Submit" class="btn-primary big"/>
+    </div>
+  </fieldset>
+</form>
+  </div>
+</div>
+<hr/>
+<h2 class="title-2 doc-title">All input types<h2>
+<div class="row grid-2 grid-md-1">
+  <div class="col">
+    <fieldset>
+    <label class="title-6 doc-title">&lt;input type="text"/&gt;</label>
+    <input type="text" value="" placeholder="Text">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="email"/&gt;</label>
+    <input type="email" value="" placeholder="Email">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="url"/&gt;</label>
+    <input type="url" value="" placeholder="Url">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="password"/&gt;</label>
+    <input type="password" value="" placeholder="Password">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="search"/&gt;</label>
+    <input type="search" value="" placeholder="Search">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="tel"/&gt;</label>
+    <input type="tel" value="" placeholder="Tel">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="date"/&gt;</label>
+    <input type="date" value="" placeholder="Date">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="time"/&gt;</label>
+    <input type="time" value="" placeholder="time">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="datetime"/&gt;</label>
+    <input type="datetime" value="" placeholder="Datetime">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="datetime-local"/&gt;</label>
+    <input type="datetime-local" value="" placeholder="Datetime-local">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="week"/&gt;</label>
+    <input type="week" value="" placeholder="Week">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="month"/&gt;</label>
+    <input type="month" value="" placeholder="Month">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;select/&gt;</label>
+    <select>
+      <optgroup label="America">
+        <option value="1">Argentina</option>
+        <option value="2">Brazil</option>
+        <option value="3">Chile</option>
+      </optgroup>
+      <optgroup label="Europe">
+        <option value="1">Spain</option>
+        <option value="2">France</option>
+        <option value="3">Germany</option>
+      </optgroup>
+    </select>
+  </fieldset>
+  </div>
+  <div class="col">
+     <fieldset>
+    <label class="title-6 doc-title">&lt;keygen/&gt;</label>
+    <keygen name="security" />
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;datalist/&gt;</label>
+    <input type="text" value="" placeholder="Press 'e'..." list="dl-browsers">
+    <datalist id="dl-browsers">
+      <option value="Internet Explorer" />
+      <option value="Firefox" />
+      <option value="Chrome" />
+      <option value="Edge" />
+      <option value="Opera" />
+      <option value="Safari" />
+    </datalist>
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="color"/&gt;</label>
+    <input type="color" value="" placeholder="Color">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="file"/&gt;</label>
+    <input type="file" value="" placeholder="File">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="number"/&gt;</label>
+    <input type="number" value="" placeholder="number">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="range"/&gt;</label>
+    <input type="range" value="" placeholder="Range">
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;output/&gt;</label>
+    50 + 20 = <output class="inline-block" name="outputAB">70</output>
+  </fieldset>
+  <fieldset>
+    <h3 class="h3 doc-title">Buttons</h3>
+    <a href="#" class="btn">&lt;a href=''/&gt;</a>
+    <input type="reset" value="&lt;input type='reset'/&gt;">
+    <input type="submit" value="&lt;input type='submit'/&gt;">
+    <input type="button" value="&lt;input type='button'/&gt;">
+    <input type="image" value="&lt;input type='image'/&gt;" placeholder="Image">
+    <button>&lt;button/&gt;</button>
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="radio"/&gt;</label>
+    <input type="radio" value="1" name="radio" id="r-1" />
+    <label for="r-1">Radio Label 1</label>
+    <br>
+    <input type="radio" value="2" name="radio" id="r-2" />
+    <label for="r-2">Radio Label 2</label>
+    <br>
+    <input type="radio" value="2" name="radio" id="r-3" />
+    <label for="r-3">Radio Label 3</label>
+  </fieldset>
+  <fieldset>
+    <label class="title-6 doc-title">&lt;input type="checkbox"/&gt;</label>
+    <input type="checkbox" value="" id="chk-1" />
+    <label for="chk-1">Checkbox Label 1</label>
+    <br>
+    <input type="checkbox" value="" id="chk-2" />
+    <label for="chk-2">Checkbox Label 2</label>
+    <br>
+  </fieldset>
+  </div>
+</div>
