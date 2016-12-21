@@ -332,3 +332,30 @@
     .col-offset-construct(8, 9);
   }
 }
+
+
+
+// FLEX SYSTEM FUNCTIONS
+
+.generate-gaps-flex(@txt, @n, @i: 0) when (@i =< @n) {
+  @num: @i;
+  &.gap@{txt}@{num}{
+    
+    margin-left: -0.5 * @num * @rem;
+    margin-right: -0.5 * @num * @rem;
+    & > .col {
+      padding-left: 0.5 * @num * @rem;
+      padding-right: 0.5 * @num * @rem;
+      padding-bottom: @num * @rem;
+    }
+  }  
+  
+  .generate-gaps-flex(@txt, @n, (@i + 1));
+}
+
+
+
+
+
+
+
