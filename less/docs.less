@@ -1,0 +1,85 @@
+/* Docs */
+.clearfix() {
+  zoom: 1;
+  &:before, &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+body{
+	overflow-y: scroll;
+}
+.doc-page{
+	padding-bottom: 100px;
+}
+
+.doc-head{
+	background-color: #BED0DE;
+	color: #FFF;
+	text-align: center;
+	font-size: 22px;
+	line-height: 80px;
+	margin-bottom: 80px;
+}
+
+.doc-container{
+	.clearfix;
+	width: 92%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+@dside: 220px;
+.doc-sidebar{
+	float: left;
+	width: @dside;
+	padding-left: 30px;
+}
+
+.doc-content{
+	.clearfix;
+	margin-left: @dside + 30px;
+}
+
+/**/
+
+#doc-index{
+	border-right: 1px solid #DDD;
+	.doc-group{
+		margin-bottom: 30px;
+	}
+	h3{
+		padding: 0;
+		margin: 0 0 10px;
+	}
+	li{
+		a{
+			display: block;
+			line-height: 25px;
+		}
+	}
+}
+
+/***************************/
+h1.d-t{
+	padding-top: 0;
+	padding-bottom: 6px;
+	border-bottom: 10px solid #EEE;
+	margin-bottom: 30px;
+}
+h2.d-t{
+	padding-top: 35px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #DDD;
+}
+
+
+.parallax-example{
+	text-align: center;
+	padding: 260px 0;
+	margin-bottom: 40px;
+	color:#FFF;
+}

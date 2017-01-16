@@ -6,8 +6,8 @@
   overflow: hidden;
   display: block;
   background-color: @light-grey-color;
-  /* Default 4:3 */
-  .prop-construct;
+  /* Default 16:9 */
+  .prop-construct(16, 9);
   img {
     position: absolute;
     display: block;
@@ -62,7 +62,7 @@
     .prop-construct(2, 1);
   }
   &.prop-1-2 {
-    .prop-construct(2, 1);
+    .prop-construct(1, 2);
   }
   &.prop-4-5 {
     .prop-construct(4, 5);
@@ -87,4 +87,13 @@ img{
       width: auto !important;
     }
   }
+}
+.bg{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-color:#CCC;
 }

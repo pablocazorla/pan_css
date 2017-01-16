@@ -1,0 +1,79 @@
+/* Docs */
+body {
+  overflow-y: scroll;
+}
+.doc-page {
+  padding-bottom: 100px;
+}
+.doc-head {
+  background-color: #BED0DE;
+  color: #FFF;
+  text-align: center;
+  font-size: 22px;
+  line-height: 80px;
+  margin-bottom: 80px;
+}
+.doc-container {
+  zoom: 1;
+  width: 92%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.doc-container:before,
+.doc-container:after {
+  content: '';
+  display: table;
+}
+.doc-container:after {
+  clear: both;
+}
+.doc-sidebar {
+  float: left;
+  width: 220px;
+  padding-left: 30px;
+}
+.doc-content {
+  zoom: 1;
+  margin-left: 250px;
+}
+.doc-content:before,
+.doc-content:after {
+  content: '';
+  display: table;
+}
+.doc-content:after {
+  clear: both;
+}
+/**/
+#doc-index {
+  border-right: 1px solid #DDD;
+}
+#doc-index .doc-group {
+  margin-bottom: 30px;
+}
+#doc-index h3 {
+  padding: 0;
+  margin: 0 0 10px;
+}
+#doc-index li a {
+  display: block;
+  line-height: 25px;
+}
+/***************************/
+h1.d-t {
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-bottom: 10px solid #EEE;
+  margin-bottom: 30px;
+}
+h2.d-t {
+  padding-top: 35px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #DDD;
+}
+.parallax-example {
+  text-align: center;
+  padding: 260px 0;
+  margin-bottom: 40px;
+  color: #FFF;
+}

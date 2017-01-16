@@ -6,14 +6,18 @@
         array('title' => 'Text', 'url' => 'text'),
         array('title' => 'Lists', 'url' => 'list'),
         array('title' => 'Table', 'url' => 'table'),
-        array('title' => 'Image', 'url' => 'image'),
-        array('title' => 'Text helpers', 'url' => 'text-helpers')
+        array('title' => 'Image', 'url' => 'image')
       ]
     ),
     array( 'title' => 'Inputs',
       'items' => [
         array('title' => 'Form inputs', 'url' => 'form'),
         array('title' => 'Buttons', 'url' => 'button')
+      ]
+    ),
+    array( 'title' => 'Components',
+      'items' => [
+        array('title' => 'Parallax', 'url' => 'parallax')
       ]
     ),
     array( 'title' => 'Layout',
@@ -39,7 +43,7 @@
   for ($i = 0; $i < count($list); $i++) {
     $menu .= '<div class="doc-group">';
     $menu .= '<h3 class="h3">'.$list[$i]['title'].'</h3>';
-    $menu .= '<ul>';
+    $menu .= '<ul class="unstyled">';
     for ($j = 0; $j < count($list[$i]['items']); $j++) {
       $url = $list[$i]['items'][$j]['url'];
       $isActive = '';
@@ -65,34 +69,41 @@
 ?>
 <!doctype HTML>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title><?php echo $titlePage;?></title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-  <div class="doc-page">
-  	<div class="container">
-      <div class="row gap-0">
-        <div class="col col-1-5">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+      <?php echo $titlePage;?>
+    </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/docs.css">
+  </head>
+
+  <body>
+    <div class="doc-page">
+      <div class="doc-head">
+        Pan CSS Documentation
+      </div>
+      <div class="doc-container">
+        <div class="doc-sidebar">
           <div id="doc-index">
-            <p><?php echo $menu; ?></p>
+            
+              <?php echo $menu; ?>
+            
           </div>
         </div>
-        <div class="col col-4-5">
-          <div id="doc-content" class="clearfix">
-            <?php include_once('html/'.$current.'.html'); ?>
-          </div>
+        <div class="doc-content">
+          <?php include_once('html/'.$current.'.html'); ?>
         </div>
       </div>
     </div>
-  </div>
-</body>
+    <script src="js/libs/jquery-1.11.2.min.js"></script>
+    <script src="js/pan.parallax.js"></script>
+  </body>
 
 </html>
